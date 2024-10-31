@@ -15,6 +15,13 @@ body {
     padding: 0 1em;
     background-color: var(--background);
     font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body section {
+    flex: 1;
 }
 
 header {
@@ -93,4 +100,8 @@ header a:hover, footer a:hover {
 .large-item {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+.current-nav {
+    text-decoration: underline;
 }
