@@ -1,0 +1,96 @@
+:root {
+    --header: #C4C9D8;
+    --background: purple;
+    --text: black;
+    --hover: blue;
+}
+
+footer {
+    padding: 3em 0px;
+}
+
+body {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 0 1em;
+    background-color: var(--background);
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+    background-color: var(--header);
+    background-position: right;
+    padding: 0 .5em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    top: .2em;
+    position: sticky;
+    z-index: 2;
+}
+
+h1 {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+img, model-viewer {
+    max-width: 100%;
+}
+
+pre {
+    overflow-y: auto;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: var(--text);
+    transition: .2s;
+    
+}
+
+header a:hover, footer a:hover {
+    color: var(--hover);
+}
+
+.person-box {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.person img {
+    border-radius: 100%;
+}
+
+.fridge-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.fridge-items div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .person-box {
+        grid-template-columns: repeat(3, auto);
+    }
+    .fridge-items {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+.large-item {
+    grid-column: span 2;
+    grid-row: span 2;
+}

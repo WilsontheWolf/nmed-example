@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with HTML</title>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <span style="width: 33%;"><img src="/assets/title.svg" alt="Museum of ME"></span></span>
+        <span style="text-align: center; width: 33%;">| as of 25.09.24 |</span>
+        <span style="text-align: right; width: 33%;"><a href="archive">archive</a> <a href="log">log</a></span>
+    </header>
+    <section class="purp-bg">
+        <h1>
+            01 | Most Commonly Used Items
+        </h1>
+        <model-viewer src="/assets/slippers.glb" alt="Slippers" auto-rotate camera-controls
+            interaction-prompt="none"></model-viewer>
+    </section>
+    <section>
+        <h1>
+            02 | People I see
+        </h1>
+        <div class="person-box">
+            <div class="person">
+                <img src="/assets/people/leanne.png" alt="Leanne">
+                <p>Person</p>
+            </div>
+            <div class="person">
+                <img src="/assets/people/matthew.png" alt="Matthew">
+                <p>Person</p>
+            </div>
+            <div class="person">
+                <img src="/assets/people/person.png" alt="Leanne">
+                <p>Person</p>
+            </div>
+            <div class="person">
+                <img src="/assets/people/person1.png" alt="Leanne">
+                <p>Person</p>
+            </div>
+            <div class="person">
+                <img src="/assets/people/person2.png" alt="Leanne">
+                <p>Person</p>
+            </div>
+            <div class="person">
+                <img src="/assets/people/person3.png" alt="Leanne">
+                <p>Person</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>
+            03 | Daily Route
+        </h1>
+        <img src="/assets/map.svg">
+    </section>
+    <section>
+        <h1>
+            04 | Always in My Fridge
+        </h1>
+        <div class="fridge-items">
+            <div>
+                <img class="large-item" src="/assets/fridge-items/cottage-cheese.png" alt="cottage-cheese.png">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/dubliner.png" alt="dubliner.png">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/eggs.webp" alt="eggs.webp">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/pickles.png" alt="pickles.png">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/siracha.jpg" alt="siracha.jpg">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/wine.webp" alt="wine.webp">
+            </div>
+            <div>
+                <img src="/assets/fridge-items/yogurt.png" alt="yogurt.png">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>
+            05 | Common Views
+        </h1>
+        <img src="/assets/views/walking-gus.jpg" alt="image">
+    </section>
+    <footer>
+        <a href="archive">Archive</a> <a href="log">Log</a>
+    </footer>
+</body>
+
+</html>
